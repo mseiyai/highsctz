@@ -5,6 +5,20 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'HighSc111',
-  plugins: []
+  siteName: 'HighSc',
+  siteDescription: "High School Informational Website",
+  siteUrl: 'https://www.high.sc.tz',
+  titleTemplate: `%s | High Sc`,
+  icon: 'src/favicon.png',
+  plugins: [
+    {
+      use: "gridsome-plugin-tailwindcss"
+    },
+    {
+      use: `gridsome-plugin-netlify-cms`,
+      options: {
+        publicPath: `/admin`
+      }
+    },
+  ]
 }
