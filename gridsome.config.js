@@ -32,5 +32,11 @@ module.exports = {
         publicPath: `/admin`
       }
     },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-114658613-1'
+      }
+    },    
   ]
 }
